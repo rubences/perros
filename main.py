@@ -1,5 +1,6 @@
 from perro import Perro
 from gato import Gato
+from ejercicio1.circulo import Circulo
 
 if __name__ == "__main__":
     # Ejemplo de uso
@@ -13,6 +14,11 @@ if __name__ == "__main__":
     print(mi_gato.maullar())
     print(mi_gato.sentarse())
     print(mi_gato.rodar())
+
+    mi_circulo = Circulo(5)
+    print(mi_circulo)
+    print("Área del círculo:", mi_circulo.area())
+    print("Perímetro del círculo:", mi_circulo.perimetro()) 
 
     # Otros tipos de perros
     perro1 = Perro("Bella", "Golden Retriever", "Dorado")
